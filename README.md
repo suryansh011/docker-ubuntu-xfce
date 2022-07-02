@@ -2,7 +2,7 @@
 
 ---
 ### /!\ WARNING /!\
----
+
 Replace **"123badpassword"** with a strong password in the *Dockerfile*.
 
 ### Building
@@ -20,7 +20,7 @@ Since VNC uses plaintext for passwords, it is recommended to use SSH tunnel to e
 
 ### Creating SSH Tunnel
 
-`ssh -L 59000:127.0.0.1:5901 -N -f -l edward 192.168.0.135`
+`ssh -L 59000:127.0.0.1:5901 -N -f -l root 192.168.0.135`
 
 Replace **192.168.0.135** with Docker machine IP address.
 
